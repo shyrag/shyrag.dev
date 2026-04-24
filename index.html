@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shyam Raghavan, MD — Pathologist · Technologist/Informaticist</title>
+  <meta name="description" content="Personal website of Shyam Raghavan, MD — Pathologist, Technologist, and Builder at the University of Colorado School of Medicine.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">SR</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting animate-in">Hello, I'm</p>
+        <h1 class="hero-name animate-in">Shyam Raghavan<span class="accent">, MD</span></h1>
+        <p class="hero-title animate-in">Pathologist <span class="separator">·</span> Technologist/Informaticist <span class="separator">·</span> Arizona Sports Fan</p>
+        <p class="hero-tagline animate-in">Physician by training, technologist by hobby.</p>
+        <div class="hero-cta animate-in">
+          <a href="#about" class="btn btn-primary">Learn more</a>
+          <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-photo animate-in">
+        <div class="photo-placeholder" id="headshot">
+          <img src="headshot.jpeg" alt="Shyam Raghavan, MD">
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">About</h2>
+      <div class="about-grid">
+        <div class="about-text animate-on-scroll">
+          <p>I'm a physician-scientist at the <strong>University of Colorado School of Medicine</strong> (CU Anschutz Medical Campus), where I serve as an Associate Professor of Pathology. I specialize in <strong>dermatopathology</strong> and <strong>gastrointestinal pathology</strong>, with board certification in both anatomic pathology and dermatopathology. I recently completed a <strong>Certificate in Clinical Informatics</strong> from Johns Hopkins, blending my clinical and technical interests.</p>
+          <p>My research focuses on the molecular basis of melanocytic neoplasms, PRAME immunohistochemistry, challenging melanocytic lesion consultation, and rare tumors of the skin and GI tract. I've published over 77 peer-reviewed papers, authored book chapters in Mills &amp; Sternberg's Diagnostic Surgical Pathology, and serve as an Assistant Editor at the <em>American Journal of Clinical Pathology</em>.</p>
+          <p>Outside the microscope, when I'm not spending time with my wife and kids, I'm a technologist at heart — I build AI agents, tinker with smart home systems, and write code to automate anything that stands still long enough. Other than that, I'm a <strong>tortured Arizona sports fan</strong>.</p>
+        </div>
+        <div class="about-interests animate-on-scroll">
+          <div class="interest-card">
+            <div class="interest-icon">🔬</div>
+            <h3>Research</h3>
+            <p>Melanocytic neoplasms, PRAME expression, GI pathology, soft tissue tumors</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">🤖</div>
+            <h3>AI & Automation</h3>
+            <p>LLM-powered agents, smart home systems, clinical informatics</p>
+          </div>
+          <div class="interest-card">
+            <div class="interest-icon">📊</div>
+            <h3>Data Science</h3>
+            <p>Machine learning in pathology, sports analytics, prediction models</p>
+          </div>
+          <div class="interest-card sports-card">
+            <img src="suns.jpeg" alt="Watching the Suns in matching Booker jerseys" class="sports-egg">
+            <div class="sports-card-content">
+              <div class="interest-icon">🏀</div>
+              <h3>Arizona Sports</h3>
+              <p>Tortured but loyal — Wildcats, Suns, Cardinals, D-backs. Dynasty fantasy football league commissioner.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Mosaic -->
+  <section class="photo-strip">
+    <div class="photo-mosaic">
+      <div class="mosaic-big animate-on-scroll">
+        <img src="cardinals.jpeg" alt="Cardinals game day">
+      </div>
+      <div class="mosaic-top-right animate-on-scroll">
+        <img src="suns.jpeg" alt="Watching the Suns">
+      </div>
+      <div class="mosaic-bottom-left animate-on-scroll">
+        <img src="bobblehead.jpeg" alt="Arizona Wildcats bobblehead">
+      </div>
+      <div class="mosaic-bottom-right animate-on-scroll">
+        <img src="dog.jpeg" alt="Shyam with his dog">
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Training -->
+  <section class="section section-alt" id="education">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Education & Training</h2>
+      <div class="timeline">
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 – 2026</span>
+            <h3>Certificate in Clinical Informatics <span style="font-size:0.75em;color:var(--accent);font-weight:500;">(Complete)</span></h3>
+            <p class="timeline-institution">Johns Hopkins University</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2019 – 2020</span>
+            <h3>Fellowship, Dermatopathology</h3>
+            <p class="timeline-institution">Stanford University Hospital</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2018 – 2019</span>
+            <h3>Fellowship, GI & Hepatobiliary Pathology</h3>
+            <p class="timeline-institution">Stanford University Hospital · Chief Resident</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2016 – 2018</span>
+            <h3>Residency, Anatomic Pathology</h3>
+            <p class="timeline-institution">Stanford University Hospital</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2012 – 2016</span>
+            <h3>Residency, Plastic & Reconstructive Surgery</h3>
+            <p class="timeline-institution">University of California San Francisco</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2007 – 2012</span>
+            <h3>Doctor of Medicine</h3>
+            <p class="timeline-institution">Stanford University School of Medicine</p>
+          </div>
+        </div>
+        <div class="timeline-item animate-on-scroll">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2003 – 2007</span>
+            <h3>SB, Chemical Engineering</h3>
+            <p class="timeline-institution">Massachusetts Institute of Technology</p>
+            <p class="timeline-note">Robert Haslem Cup (top ChemE graduate) · Phi Sigma Kappa</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="subsection-title animate-on-scroll">Positions</h3>
+      <div class="positions-grid">
+        <div class="position-card animate-on-scroll">
+          <span class="position-date">2023 – Present</span>
+          <h4>Associate Professor of Pathology</h4>
+          <p>University of Colorado School of Medicine</p>
+        </div>
+        <div class="position-card animate-on-scroll">
+          <span class="position-date">2020 – 2023</span>
+          <h4>Assistant Professor of Pathology & Dermatology</h4>
+          <p>University of Virginia School of Medicine</p>
+        </div>
+      </div>
+
+      <h3 class="subsection-title animate-on-scroll">Board Certification</h3>
+      <div class="positions-grid">
+        <div class="position-card animate-on-scroll">
+          <span class="position-date">2020</span>
+          <h4>Dermatopathology</h4>
+          <p>American Board of Pathology and Dermatology</p>
+        </div>
+        <div class="position-card animate-on-scroll">
+          <span class="position-date">2019</span>
+          <h4>Anatomic Pathology</h4>
+          <p>American Board of Pathology</p>
+        </div>
+        <div class="position-card animate-on-scroll">
+          <span class="position-date">2026</span>
+          <h4>Clinical Informatics (Eligible)</h4>
+          <p>American Board of Pathology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section" id="publications">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Selected Publications</h2>
+      <p class="section-subtitle animate-on-scroll">77 peer-reviewed publications · 3 book chapters · 30+ presentations</p>
+
+      <div class="publications-list">
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2026</span>
+          <div class="pub-content">
+            <p class="pub-title">Pediatric Acral Melanoma With a Novel ARL6IP1-PRKCB Fusion.</p>
+            <p class="pub-authors">Osman KM, Prok L, Wisell JA, Ma Y, <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>J Cutan Pathol.</em> 2026.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2026</span>
+          <div class="pub-content">
+            <p class="pub-title">Beyond Classic Leukemia Cutis: Evidence of Leukemic Cell "Spillover".</p>
+            <p class="pub-authors">Hitchcock D, Newman S, Pang CS, <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>J Cutan Pathol.</em> 2026;53(2):180-185.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <p class="pub-title">Unmasking a Persistent Rash.</p>
+            <p class="pub-authors">Osman KM, Fowler JJ, Newman SA, <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>Am J Dermatopathol.</em> 2025;47(11):896-897.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2025</span>
+          <div class="pub-content">
+            <p class="pub-title">Response to Expanding Insights Into PRAME Expression in Merkel Cell Carcinoma.</p>
+            <p class="pub-authors"><strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>Am J Surg Pathol.</em> 2025;49(6):637-638.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <p class="pub-title">PRAME Expression in Merkel Cell Carcinoma.</p>
+            <p class="pub-authors">Miller E*, Biesemier A*, Coomes DM, <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>Am J Surg Pathol.</em> 2024.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2024</span>
+          <div class="pub-content">
+            <p class="pub-title">Machine-learning-based integrative -'omics analyses reveal immunologic and metabolic dysregulation in environmental enteric dysfunction.</p>
+            <p class="pub-authors">Zulqarnain F, Zhao X, Setchell KDR, et al., <strong>Raghavan SS</strong>, et al.</p>
+            <p class="pub-journal"><em>iScience.</em> 2024;27(6):110013.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2023</span>
+          <div class="pub-content">
+            <p class="pub-title">Desmoplastic stromal signatures predict patient outcomes in pancreatic ductal adenocarcinoma.</p>
+            <p class="pub-authors">Mascharak S, Guo JL, et al., <strong>Raghavan SS</strong>, et al.</p>
+            <p class="pub-journal"><em>Cell Rep Med.</em> 2023;101248.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2023</span>
+          <div class="pub-content">
+            <p class="pub-title">Malignant undifferentiated and rhabdoid tumors of the gastroesophageal junction and esophagus with SMARCA4 loss: a case series.</p>
+            <p class="pub-authors">*Gupta S, Noona SW, et al., <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>Hum Pathol.</em> 2023;134:56-65.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2022</span>
+          <div class="pub-content">
+            <p class="pub-title">Immunohistochemistry in melanocytic lesions: Updates with a practical review for pathologists.</p>
+            <p class="pub-authors">Saleem A, Narala S, <strong>Raghavan SS</strong>.</p>
+            <p class="pub-journal"><em>Seminars in Diagnostic Pathology.</em> 2022;39(4):239-247.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2022</span>
+          <div class="pub-content">
+            <p class="pub-title">Targeting oxidized phospholipids by AAV-based gene therapy in mice with established hepatic steatosis prevents progression to fibrosis.</p>
+            <p class="pub-authors">Upchurch CM, Yeudall S, et al., <strong>Raghavan SS</strong>, et al.</p>
+            <p class="pub-journal"><em>Sci Adv.</em> 2022;8(28):eabn0050.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2020</span>
+          <div class="pub-content">
+            <p class="pub-title">Spitz melanoma is a distinct subset of spitzoid melanoma.</p>
+            <p class="pub-authors"><strong>Raghavan SS</strong>, Peternel S, Mully TW, North JP, Pincus LB, LeBoit PE, et al.</p>
+            <p class="pub-journal"><em>Mod Pathol.</em> 2020;33(6):1122-34.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2020</span>
+          <div class="pub-content">
+            <p class="pub-title">PRAME expression in melanocytic proliferations with intermediate histopathologic or spitzoid features.</p>
+            <p class="pub-authors"><strong>Raghavan SS</strong>, Wang JY, Kwok S, Rieger KE, Novoa RA, Brown RA.</p>
+            <p class="pub-journal"><em>J Cutan Pathol.</em> 2020;47(12):1123-31.</p>
+          </div>
+        </div>
+
+        <div class="pub-item animate-on-scroll">
+          <span class="pub-year">2020</span>
+          <div class="pub-content">
+            <p class="pub-title">Diffuse PRAME expression is highly specific for malignant melanoma in the distinction from clear cell sarcoma.</p>
+            <p class="pub-authors"><strong>Raghavan SS</strong>, Wang JY, Toland A, Bangs CD, Rieger KE, Novoa RA, et al.</p>
+            <p class="pub-journal"><em>J Cutan Pathol.</em> 2020;47(12):1226-8.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub-more animate-on-scroll">
+        <h3>Book Chapters</h3>
+        <p>Three chapters in <em>Mills &amp; Sternberg's Diagnostic Surgical Pathology</em>, 7th Edition (Lippincott Williams &amp; Wilkins) — covering non-neoplastic GI diseases, melanocytic lesions, and non-melanocytic cutaneous tumors.</p>
+      </div>
+
+      <div class="pub-links animate-on-scroll">
+        <a href="https://som.cuanschutz.edu/Profiles/Faculty/Profile/38476" class="btn btn-outline" target="_blank" rel="noopener">Full Publication List &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Projects & Interests</h2>
+      <div class="projects-grid">
+        <div class="project-card animate-on-scroll">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6h4c0-3 2-4 2-6a4 4 0 0 0-4-4z"/><line x1="10" y1="16" x2="14" y2="16"/><line x1="10" y1="19" x2="14" y2="19"/><line x1="11" y1="22" x2="13" y2="22"/></svg>
+          </div>
+          <h3>AI Assistant</h3>
+          <p>A personal AI agent built via OpenClawd that manages email, calendar, smart home, and daily workflows. Built with LLMs, custom tooling, and way too many API integrations.</p>
+          <div class="project-tags">
+            <span>AI/LLM</span>
+            <span>Automation</span>
+            <span>Python</span>
+          </div>
+        </div>
+        <div class="project-card project-card-has-img animate-on-scroll">
+          <img src="smarthome.jpeg" alt="Home Assistant energy dashboard" class="project-card-img">
+          <div class="project-card-body">
+            <div class="project-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Smart Home</h3>
+            <p>An extensive Home Assistant setup with Zigbee devices, Frigate NVR for camera AI, solar monitoring, and automations for lighting, climate, security, and everything in between.</p>
+            <div class="project-tags">
+              <span>Home Assistant</span>
+              <span>Zigbee</span>
+              <span>Frigate</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Sports Analytics</h3>
+          <p>NBA betting models, prediction systems, and data pipelines. Python and pandas for data wrangling, scikit-learn for modeling. Because even sports fandom deserves a quantitative approach.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>pandas</span>
+            <span>scikit-learn</span>
+            <span>NBA</span>
+          </div>
+        </div>
+        <div class="project-card animate-on-scroll">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+          </div>
+          <h3>Automation</h3>
+          <p>If it can be automated, it will be. From clinical workflows to home infrastructure — always looking for the next thing to streamline.</p>
+          <div class="project-tags">
+            <span>TypeScript</span>
+            <span>Infrastructure</span>
+            <span>APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title animate-on-scroll">Get in Touch</h2>
+      <p class="section-subtitle animate-on-scroll">Whether it's pathology, tech, or Arizona sports takes — I'm always happy to connect.</p>
+      <div class="contact-links animate-on-scroll">
+        <a href="mailto:shyam@shyrag.dev" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>shyam@shyrag.dev</span>
+        </a>
+        <a href="https://github.com/shyrag" class="contact-card" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          <span>github.com/shyrag</span>
+        </a>
+        <a href="https://www.linkedin.com/in/shyam-raghavan-62582759/" class="contact-card" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://som.cuanschutz.edu/Profiles/Faculty/Profile/38476" class="contact-card" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+          <span>Faculty Profile</span>
+        </a>
+      </div>
+
+      <div class="contact-bot animate-on-scroll">
+        <p class="contact-bot-label">Or talk to my AI assistant:</p>
+        <div class="contact-links">
+          <a href="mailto:rafi@shyrag.dev" class="contact-card">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6h4c0-3 2-4 2-6a4 4 0 0 0-4-4z"/><line x1="10" y1="16" x2="14" y2="16"/><line x1="10" y1="19" x2="14" y2="19"/><line x1="11" y1="22" x2="13" y2="22"/></svg>
+            <span>rafi@shyrag.dev</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shyam Raghavan, MD. Built with plain HTML, CSS, and a little JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

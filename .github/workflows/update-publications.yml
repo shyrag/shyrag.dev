@@ -1,0 +1,48 @@
+name: Update Publication Count
+
+on:
+  schedule:
+    - cron: '0 6 1 * *'  # 1st of every month at 6am UTC
+  workflow_dispatch:      # allow manual trigger
+
+jobs:
+  update-count:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch publication count from PubMed
+        id: pubmed
+        run: |
+          COUNT=$(curl -s "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Raghavan+SS%5BAuthor%5D+AND+%28dermatopathology+OR+melanocytic+OR+pathology+OR+Colorado%29&rettype=count&retmode=json" \
+            | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['esearchresult']['count'])")
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "Fetched count: $COUNT"
+
+      - name: Update index.html if count changed
+        id: update
+        run: |
+          COUNT=${{ steps.pubmed.outputs.count }}
+          CURRENT=$(grep -oP '\d+(?= peer-reviewed publications)' index.html | head -1)
+          echo "Current: $CURRENT, PubMed: $COUNT"
+          if [ "$COUNT" != "$CURRENT" ] && [ -n "$COUNT" ] && [ "$COUNT" -gt 0 ]; then
+            sed -i "s/${CURRENT} peer-reviewed publications/${COUNT} peer-reviewed publications/g" index.html
+            sed -i "s/over ${CURRENT} peer-reviewed papers/over ${COUNT} peer-reviewed papers/g" index.html
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Updated $CURRENT → $COUNT"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No change needed"
+          fi
+
+      - name: Commit and push if updated
+        if: steps.update.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git commit -m "chore: update publication count to ${{ steps.pubmed.outputs.count }}"
+          git push
